@@ -9,9 +9,9 @@ def main():
     time_start = time.time()
     for i in range(45):
         print(fib(i))
-        print(time.time() - time_start)
+        print(f"{time.time() - time_start} seconds")
     time_end = time.time()
     elapsed_time = time_end - time_start
-    print(f"{elapsed_time:.9f}")
+    print(f"{elapsed_time:.9f} seconds")
 
 main()
