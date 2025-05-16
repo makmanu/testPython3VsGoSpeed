@@ -1,4 +1,7 @@
 import time
+from functools import lru_cache
+
+@lru_cache(None)
 
 def fib(n):
     if n < 2:
@@ -11,7 +14,7 @@ def main():
         print(fib(i))
         print(f"{time.time() - time_start} seconds")
         if time.time() - time_start > 10:
-            return
+            return        
     time_end = time.time()
     elapsed_time = time_end - time_start
     print(f"{elapsed_time:.9f} seconds")
