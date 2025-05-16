@@ -10,7 +10,7 @@ def fib(n):
 
 def main():
     time_start = time.time()
-    for i in range(100):
+    for i in range(1000000):
         print(f"fib number №{i}")
         print(fib(i))
         print(f"{time.time() - time_start} seconds")

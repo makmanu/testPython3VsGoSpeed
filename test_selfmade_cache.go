@@ -26,7 +26,7 @@ func fib_cache() func(int) int{
 
 func main(){
 	timeStart := time.Now()
-    for i := 0; i < 100; i++ {
+    for i := 0; i < 1000000; i++ {
 		fmt.Printf("fib number №%d\n", i)		
         fmt.Println(fib_cache()(i))
 		fmt.Println("		", time.Since(timeStart))
