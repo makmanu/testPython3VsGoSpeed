@@ -8,6 +8,7 @@ def fib(n):
 def main():
     time_start = time.time()
     for i in range(45):
+        print(f"fib number №{i}")
         print(fib(i))
         print(f"{time.time() - time_start} seconds")
         if time.time() - time_start > 10:
